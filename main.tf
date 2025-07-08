@@ -5,7 +5,7 @@ module "networking" {
   private_subnets = var.private_subnets
   azs             = var.azs
 }
-
+ 
 module "iam" {
   source       = "./modules/iam"
   cluster_name = var.cluster_name
