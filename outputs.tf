@@ -7,7 +7,7 @@ output "cluster_ca_data" {
   description = "Base64-encoded CA certificate data"
   value       = aws_eks_cluster.this.certificate_authority[0].data
 }
-
+ 
 output "public_subnet_ids" {
   description = "IDs of public subnets"
   value       = module.networking.public_subnet_ids
